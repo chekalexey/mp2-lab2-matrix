@@ -240,7 +240,7 @@ public:
   // матрично-скалярные операции
   TDynamicVector<T> operator*(const T& val)
   {
-      TDanymicMatrix<T> res(sz);
+      TDynamicVector<T> res(sz);
 
       for (int i = 0; i < sz; i++)
           res.pMem[i] = val * pMem[i];
